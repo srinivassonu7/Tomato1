@@ -1,0 +1,5 @@
+my-app/node_modules
+env
+backend/app/leaf_model_32_98.h5
+backend/app/leaf.h5
+backend/app/leaf_model_10_96.h5
