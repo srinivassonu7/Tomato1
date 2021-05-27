@@ -6,14 +6,16 @@ import Route from "react-router-dom/Route";
 import Home1 from "./Home/Home1.js";
 import Navbar from "./Navbar.js";
 import App from "./Prediction/App.js"
-//import "./styles.css"
+import "./styles.css"
 
 class App1 extends React.Component {
   render() {
     return (
       <Router>
+        
         <div>
           <div><Navbar /></div>
+          
           <div>
           <Switch>
             <Route exact path="/" component={Home1} />

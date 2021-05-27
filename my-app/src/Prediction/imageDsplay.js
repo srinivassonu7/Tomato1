@@ -2,12 +2,21 @@ function ImgDisplay(props){
     return(
         <div>
                  <div class="card mt-4">
-              <h5 class="card-header">Featured</h5>
+              <h2 class="card-header">
+                <div class="text-center">
+                  
+                OUTPUT
+                </div>
+                </h2>
               <div class="card-body">
                 <div class="row">
                 
-                  <div class="col " style={{borderRight:"3px solid grey"}}>
-                  <h1 class="text-center">Results</h1>
+                  <div class="col " >
+                    <div class="imgdp">
+                  <h4 class="text-center mb-5">Results</h4>
+                        <div className="text-center" >
+                            <h3 class="text-success">{props.Dname}</h3>
+                        </div>
                     <div className="text-center mt-4 mb-5">
                       {props.imgurl && (
                         <div >
@@ -15,15 +24,13 @@ function ImgDisplay(props){
                         </div>
                       )}
                     </div>
-                    <div className="text-center" >
-                      <h1>{props.Dname}</h1>
                     </div>
 
                   </div>
                   <div class="col">
-                      <h1 class="text-center">Remedies</h1>
+                      <h4 class="text-center">Remedies</h4>
                     <div className="text-left" >
-                        <p style={{fontSize:"25px"}}>{props.Rname}</p>
+                        <p style={{fontSize:"20px",marginTop:"50px"}}>{props.Rname}</p>
                       </div>
                   </div>
 

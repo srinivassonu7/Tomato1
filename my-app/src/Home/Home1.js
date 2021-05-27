@@ -8,7 +8,7 @@ import p1 from "../images/p1.JPG"
 import HomeImages from"./homeImages.js"
 import Urls from "./imageUrls.js"
 import {Link} from 'react-router-dom'
-import './Home1.css'
+//import './Home1.css'
 
 
 class Home1 extends Component {

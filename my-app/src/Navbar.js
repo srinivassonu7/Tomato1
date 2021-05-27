@@ -1,14 +1,22 @@
 import {Link as Link1} from 'react-scroll';
 import {Link} from "react-router-dom"
-import "./styles.css"
+//import "./styles.css"
 
 function Navbar(props){
     return(
+        
+        <div>
+            
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-uppercase fixed-top" id="mainNav">
+       
             <div class="container">
                 <Link to="/" >
-                <a class="navbar-brand" href="#">Project Name</a>
+                <a class="navbar-brand" href="#">
+                            Crop Diagnosis 
+                    
+                </a>
                 </Link>
+                
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" 
                         type="button" 
                         data-toggle="collapse" 
@@ -34,15 +42,15 @@ function Navbar(props){
                     </li>
                     
                     <li class="nav-item mx-0 mx-lg-1">
-                    <Link  to="/contact" spy={true} smooth={true}>
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#">Contact</a>
-                    </Link>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded" >Translate</a>
+                    <div id="google_translate_element"></div>
                     </li>
                     </ul>
                     
                 </div>
             </div>
         </nav>
+        </div>
         );
 }
 

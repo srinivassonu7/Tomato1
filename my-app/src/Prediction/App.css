@@ -3,3 +3,27 @@
     height:400px,
     
 }
+
+@media (max-width: 768px) {
+
+    [class*="col-md"] {
+        margin-bottom: 20px;
+        
+    };
+    
+  }
+@media screen and (max-width: 768px) {
+    .imgdp {
+
+        border-bottom: 3px solid grey;
+        
+        
+    }
+    
+  }
+  @media screen and (min-width: 768px) {
+    .imgdp {
+        border-right:3px solid grey
+    }
+    
+  }

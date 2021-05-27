@@ -13,7 +13,7 @@ from tensorflow.keras.preprocessing import image
 
 #from Diseases import CATEGORIES;
 #import Diseases,Remidies
-MODEL_PATH ='app/leaf.h5'
+MODEL_PATH ='app/leaf_model_10_96.h5'
 model = load_model(MODEL_PATH)
 CATEGORIES=['Tomato Bacterial spot',      
             'Tomato Early blight',

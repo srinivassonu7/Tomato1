@@ -3,9 +3,11 @@ function ImgUpload(props){
         <div className="">
         <form onSubmit={props.imgSubmit} >
             <div className="form-group text-center">
-                <div class="alert alert-primary" role="alert">
+                 
+                <div class="alert alert-primary" role="alert"  style={{marginTop:70}}>
                 Upload Tomato Leaf!
                 </div>
+                
                 {/*<label  class="alert alert-primary" role="alert" for="exampleFormControlFile1">Upload Tomato Leaf</label>*/}
                 <input type="file" 
                        class="form-control form-control-lg form-control-file" 

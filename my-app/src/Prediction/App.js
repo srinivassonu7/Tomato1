@@ -32,6 +32,7 @@ class App extends Component {
             imgurl: [reader.result]
         })
       }.bind(this);
+      
     //console.log(url) 
     this.setState({
         image: file,
@@ -44,6 +45,10 @@ class App extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    if(!this.state.image)
+    {
+      return;
+    }
     console.log(this.state);
     let form_data = new FormData();
     form_data.append('image', this.state.image, this.state.image.name);
@@ -52,6 +57,7 @@ class App extends Component {
       headers: {
         'content-type': 'multipart/form-data'
       }
+      
     }
     axios.post(url, form_data,config )
         .then(res => {
@@ -70,7 +76,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" style={{background: `url(${wallpaper2})`,height:"143vh",width:"auto"}}>
+      <div className="App" style={{background: `url(${wallpaper2})`,height:"auto",width:"auto"}}>
         <div className=" container mt-5 shadow p-3 mb-5 bg-white rounded">
           {<div className="mt-5">
             <ImgUpload imgSubmit={this.handleSubmit} imgChange={this.handleImageChange}/>
