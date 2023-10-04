@@ -1,9 +1,10 @@
-# Tomato1
+![screencapture-localhost-3000-2021-05-18-16_30_55](https://github.com/srinivassonu7/Tomato1/assets/41520796/1f598399-e34c-406e-9ca1-d144f567cc5b)# Tomato1
 Creating a comprehensive README for your GitHub project is essential for ensuring that others can understand, use, and contribute to your Classification of Tomato Leaf Disease project effectively. Here's a template you can follow:
 
 # Classification of Tomato Leaf Disease
 
-![Tomato Leaf Disease](link-to-an-image.jpg)
+![Uploading screencapture-localhost-3000-2021-05-18-15_31_33.png…]()
+
 
 ## Table of Contents
 - [Introduction](#introduction)
